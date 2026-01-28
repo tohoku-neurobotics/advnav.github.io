@@ -4,14 +4,14 @@
       <meta charset="UTF-8">
       <link rel="stylesheet" href="main.css">
       <link rel="icon" type="image/x-icon" href="assets/digit.png">
-      <title>EmoBipedNav</title>
+      <title>advnav</title>
   </head>
   <body>
 
 
     <div id="title_slide">
         <div class="title_left">
-            <h1>EmoBipedNav: Emotion-aware Social Navigation for Bipedal Robots <br> with Deep Reinforcement Learning</h1>
+            <h1>Iterative Adversarial Learning with Chaser Agents <br> for Time-efficient Crowd-aware Navigation</h1>
         
 
             <div class="box alt">
@@ -62,18 +62,14 @@
 
             <div id="abstract" class="grid-container">
                 <p>
-                  This study presents an emotion-aware navigation framework -- EmoBipedNav -- using deep reinforcement learning (DRL) 
-                  for bipedal robots walking in socially interactive environments. The inherent locomotion constraints of bipedal robots 
-                  challenge their safe maneuvering capabilities in dynamic environments. When combined with the intricacies of social 
-                  environments, including pedestrian interactions and social cues, such as emotions, these challenges become even more 
-                  pronounced. To address these coupled problems, we propose a two-stage pipeline that considers both bipedal locomotion 
-                  constraints and complex social environments. Specifically, social navigation scenarios are represented using sequential 
-                  LiDAR grid maps (LGMs), from which we extract latent features, including collision regions, emotion-related discomfort 
-                  zones, social interactions, and the spatio-temporal dynamics of evolving environments. The extracted features are 
-                  directly mapped to the actions of reduced-order models (ROMs) through a DRL architecture. Furthermore, the proposed 
-                  framework incorporates full-order dynamics and locomotion constraints during training, effectively accounting for 
-                  tracking errors and restrictions of the locomotion controller while planning the trajectory with ROMs. Comprehensive 
-                  experiments demonstrate that our approach exceeds both model-based planners and DRL-based baselines.
+                  This paper addresses the challenge of safe and efficient crowd navigation for autonomous robots in dynamic environments. 
+									Existing methods struggle in scenarios with unpredictable or obstructive pedestrian behaviors. These limitations raise serious 
+									safety and efficiency concerns in real-world deployments. To improve navigation robustness and efficiency, we propose an adversarial 
+									deep reinforcement learning (DRL) framework that simulates competitive pedestrian behaviors through a chaser agent. In addition, we further 
+									introduce an ensemble agent that dynamically selects policies based on real-time observations, enhancing generalization across diverse scenarios.
+									Extensive simulation results demonstrate enhanced navigation performance in terms of success rate and navigation efficiency when using our framework.
+									Additionally, the ensemble agent further improves stability and overall generalizability across various environments. Real-world experiments 
+									validate the approach and demonstrate the potential for sim-to-real transfer. 
                 </p>
             </div>
         </div>
