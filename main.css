@@ -48,6 +48,7 @@ body {
 .title_left {
     padding-top: 8vw;
     filter: none;
+    width: 100%;
 }
 
 .title_right {
@@ -1648,4 +1649,3 @@ a:hover {
   height: 18px;
   fill: currentColor;
 }
-
