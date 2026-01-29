@@ -1614,9 +1614,11 @@ a:hover {
 /* Pill-style link buttons */
 .pill-links{
   display: flex;
+  justify-content: center;
   gap: 12px;
   flex-wrap: wrap;
   align-items: center;
+  width: 100%;
   margin: 14px 0 6px 0;
 }
 
