@@ -70,18 +70,16 @@
     
     <div id="overview">
 
-        <h1>EmoBipedNav</h1>
+        <h1>System architecture</h1>
 
         <p>
-          Our framework begins by obtaining estimated facial emotions using pre-trained CNN models. Simultaneously, we transform raw LiDAR 
-          scans into sequential pie-shape lidar grid maps (LGMs). These grid maps are converted into stacked pixel images which are further 
-          processed through an encoder constructed using convolutional neural networks (CNNs) to extract socially interactive and emotionally 
-          aware features. The resulting latent features are concatenated with the robot's last command and target position, which are fed 
-          into an actor-critic deep reinforcement learning (DRL) structure implemented with multi-layer perceptrons (MLPs). The action output 
-          from the actor network is derived from the reduce-order model (ROM) and practically applied to a bipedal robot with full-body 
-          dynamics and constraints. The torso position and yaw angle obtained from Digit correspond to the ego-agent state. We use the angular 
-          momentum linear inverted pendulum planner (ALIP) and a passivity full-body controller with ankle actuation to track the desirable 
-          ROM trajectory.
+          In this paper, we introduce an adversarial reinforcement learning framework that improves safe and time-efficient crowd navigation
+          by training with competitive chaser agents and an ensemble strategy. More specifically, the framework starts with pre-training a
+          navigator agent in a non-adversarial environment to acquire basic navigation skills. We then introduce a reinforcement learning–based
+          chaser agent that creates competitive scenarios, forcing the navigator to adapt. To ensure stable performance across diverse
+          environments, we further design an ensemble agent that dynamically selects between models trained in different iterations. After
+          pre-training, the navigator and chaser are trained alternately under adversarial conditions. This iterative process allows both agents
+          to exploit weaknesses and gradually improve their strategies, ultimately producing stronger and more robust navigation policies.
         </p>
 
         <div style="display: flex; justify-content: center;">
