@@ -93,10 +93,9 @@
           </iframe>
         </div>
 
-        <h1>Simulation benchmark in MuJoCo</h1>
+        <h1>Simulation evaluation</h1>
         <p>
-          Initially, we train and test our navigation policy in a physics-based simulator MuJoCo, using a full-body bipedal robot and a full-order 
-          dynamics. Simulatioin comparisons demonstrate the effectiveness of our social navigation pipeline for bipedal robots.
+          We compared our method with four baselines: two model-based approaches and two learning-based methods. We then evaluated our models across multiple environments. Different iterations represent models obtained during successive stages of training, while the ensemble agent—combining the first and third iterations—achieved the most stable and reliable performance.
         </p>
 
         <div style="display: flex; justify-content: center;">
@@ -110,24 +109,7 @@
           </iframe>
         </div>
 
-        <h1>Simulation in complex scenario</h1>
-        <p>
-          We deploy our policy into a more complex simulation scenarios, further indicating that our navigation policy enables the bipedal 
-          robot to adapt to complex and interactive scenarios integrated with pedestrian emotions.
-        </p>
-
-        <div style="display: flex; justify-content: center;">
-          <iframe 
-            width="560" 
-            height="315" 
-            src="https://www.youtube.com/embed/IpVLqscL89o?autoplay=1&mute=1" 
-            frameborder="0" 
-            allow="autoplay; encrypted-media" 
-            allowfullscreen>
-          </iframe>
-        </div>
-
-        <h1>Realworld experiments</h1>
+        <h1>Sim-to-real</h1>
         <p>
           Finally, we validated our approach in real-world scenarios using a mobile robot equipped with LiDAR and depth cameras, demonstrating
           the sim-to-real potential of our adversarial reinforcement learning framework.
