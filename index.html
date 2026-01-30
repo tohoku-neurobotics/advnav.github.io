@@ -111,17 +111,8 @@
 
         <h1>Sim-to-real</h1>
         <p>
-          We transfer our simulated navigation policy into real-world scenarios with diverse pedestrian motion patterns. The robot should avoid 
-          static obstacles while interacting with pedestrians. We include several representative motion patterns. For example, pedestrians 
-          cross in front of the robot, walk and suddenly stop in front of the robot, group together to cross in front of the robot, and randomly 
-          interact with the robot and other pedestrians. Furthermore, we randomly set pedestrian emotions. Accordingly, our social navigation 
-          policy can well adapt to its own behaviors to avoid collisions and reduce intrusions into discomfort zones of pedestrians, indicating 
-          the potential of sim-to-real transfer of our navigation policy. In addition, we integrate robot localization, pedestrian detection, 
-          and emotion recognition into our pipeline to further validate the practicality of our emotion-aware social navigation. These modules 
-          are achieved by an on-board stereo camera, and corresponding SLAM and perception algorithms. Pedestrians’ states can change between 
-          static and moving, and their emotions also alter between happy, neutral, and negative. To investigate further, we increase the 
-          environment complexities. For example, pedestrians group together and keep static to block the robot. Moreover, we increase the 
-          pedestrian density to make the scenario more crowded. 
+          Finally, we validated our approach in real-world scenarios using a mobile robot equipped with LiDAR and depth cameras, demonstrating
+          the sim-to-real potential of our adversarial reinforcement learning framework.
         </p>
         
         <div style="display: flex; justify-content: center;">
@@ -129,39 +120,6 @@
             width="560" 
             height="315" 
             src="https://www.youtube.com/embed/KnCzS2p8oLc?autoplay=1&mute=1" 
-            frameborder="0" 
-            allow="autoplay; encrypted-media" 
-            allowfullscreen>
-          </iframe>
-        </div>
-
-        <h1>Outdoor experiments</h1>
-        <p>
-          Finally, we deploy our navigation policy into more realistic environments, like the campus after classes. Pedestrians are more 
-          crowded, and interactions are more complicated. The bipedal robot can still achieve the emotion-aware social navigation task.
-        </p>
-
-        <div style="display: flex; justify-content: center;">
-          <iframe 
-            width="560" 
-            height="315" 
-            src="https://www.youtube.com/embed/QGdr_MnXXw0?autoplay=1&mute=1" 
-            frameborder="0" 
-            allow="autoplay; encrypted-media" 
-            allowfullscreen>
-          </iframe>
-        </div>
-
-        <h1>Outdoor experiment in a dense crowd</h1>
-        <p>
-          We implemented our policy in a more dense environment, with pedestrian detection and emotion recoginition shown in the top video.
-        </p>
-        
-        <div style="display: flex; justify-content: center;">
-          <iframe 
-            width="560" 
-            height="315" 
-            src="https://www.youtube.com/embed/r_3txTwhS3w?autoplay=1&mute=1" 
             frameborder="0" 
             allow="autoplay; encrypted-media" 
             allowfullscreen>
